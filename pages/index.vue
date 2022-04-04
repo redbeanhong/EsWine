@@ -1,12 +1,22 @@
 <template lang="pug">
-  .continer
-    h1 首頁
+  #index
+    Navbar
+    Banner
+    Product
+    Footbar
 </template>
 
-<style lang="scss">
-h1 {
-  color: blue;
-  font-size: 48px;
-  text-align: center;
+<script>
+import Navbar from '@/components/Navbar.vue'
+import Banner from '@/components/Banner.vue'
+import Product from '@/components/Product.vue'
+import Footbar from '@/components/Footbar.vue'
+export default {
+  components: {
+    Navbar,
+    Banner,
+    Product,
+    Footbar
+  }
 }
-</style>
+</script>
